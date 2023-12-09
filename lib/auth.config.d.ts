@@ -135,7 +135,7 @@ export declare class AuthConfig {
      */
     timeoutFactor?: number;
     /**
-     * If true, the dist will try to check whether the user
+     * If true, the lib will try to check whether the user
      * is still logged in on a regular basis as described
      * in http://openid.net/specs/openid-connect-session-1_0.html#ChangeNotification
      */

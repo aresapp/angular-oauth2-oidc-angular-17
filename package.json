@@ -5,6 +5,7 @@
   "files": [
     "dist"
   ],
+  "types": "lib/index.d.ts",
   "scripts": {
     "release": "standard-version",
     "ng": "ng",

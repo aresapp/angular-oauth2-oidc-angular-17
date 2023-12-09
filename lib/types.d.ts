@@ -53,7 +53,7 @@ export declare class LoginOptions {
     disableNonceCheck?: boolean;
     /**
      * Normally, you want to clear your hash fragment after
-     * the dist read the token(s) so that they are not displayed
+     * the lib read the token(s) so that they are not displayed
      * anymore in the url. If not, set this to true. For code flow
      * this controls removing query string values.
      */
