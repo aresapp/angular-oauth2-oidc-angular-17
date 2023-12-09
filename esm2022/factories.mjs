@@ -1,4 +1,4 @@
-import { MemoryStorage } from './types';
+import { MemoryStorage } from './types.mjs';
 export function createDefaultLogger() {
     return console;
 }

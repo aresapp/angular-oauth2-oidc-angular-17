@@ -1,4 +1,4 @@
-import { NullValidationHandler } from './null-validation-handler';
+import { NullValidationHandler } from './null-validation-handler.mjs';
 const err = `PLEASE READ THIS CAREFULLY:
 
 Beginning with angular-oauth2-oidc version 9, the JwksValidationHandler

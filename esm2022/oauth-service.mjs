@@ -3,18 +3,18 @@ import { HttpHeaders, HttpParams, } from '@angular/common/http';
 import { Subject, of, race, from, combineLatest, throwError, } from 'rxjs';
 import { filter, delay, first, tap, map, switchMap, debounceTime, catchError, } from 'rxjs/operators';
 import { DOCUMENT } from '@angular/common';
-import { OAuthInfoEvent, OAuthErrorEvent, OAuthSuccessEvent, } from './events';
-import { b64DecodeUnicode, base64UrlEncode } from './base64-helper';
-import { AuthConfig } from './auth.config';
-import { WebHttpUrlEncodingCodec } from './encoder';
+import { OAuthInfoEvent, OAuthErrorEvent, OAuthSuccessEvent, } from './events.mjs';
+import { b64DecodeUnicode, base64UrlEncode } from './base64-helper.mjs';
+import { AuthConfig } from './auth.config.mjs';
+import { WebHttpUrlEncodingCodec } from './encoder.mjs';
 import * as i0 from "@angular/core";
 import * as i1 from "@angular/common/http";
-import * as i2 from "./types";
-import * as i3 from "./token-validation/validation-handler";
-import * as i4 from "./auth.config";
-import * as i5 from "./url-helper.service";
-import * as i6 from "./token-validation/hash-handler";
-import * as i7 from "./date-time-provider";
+import * as i2 from "./types.mjs";
+import * as i3 from "./token-validation/validation-handler.mjs";
+import * as i4 from "./auth.config.mjs";
+import * as i5 from "./url-helper.service.mjs";
+import * as i6 from "./token-validation/hash-handler.mjs";
+import * as i7 from "./date-time-provider.mjs";
 /**
  * Service for logging in and logging out with
  * OIDC and OAuth2. Supports implicit flow and

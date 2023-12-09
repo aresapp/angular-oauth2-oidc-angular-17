@@ -1,16 +1,16 @@
 import { makeEnvironmentProviders } from '@angular/core';
-import { OAuthModuleConfig } from './oauth-module.config';
-import { NullValidationHandler } from './token-validation/null-validation-handler';
-import { DateTimeProvider, SystemDateTimeProvider } from './date-time-provider';
-import { OAuthStorage, OAuthLogger } from './types';
+import { OAuthModuleConfig } from './oauth-module.config.mjs';
+import { NullValidationHandler } from './token-validation/null-validation-handler.mjs';
+import { DateTimeProvider, SystemDateTimeProvider } from './date-time-provider.mjs';
+import { OAuthStorage, OAuthLogger } from './types.mjs';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { OAuthService } from './oauth-service';
-import { UrlHelperService } from './url-helper.service';
-import { OAuthResourceServerErrorHandler, OAuthNoopResourceServerErrorHandler, } from './interceptors/resource-server-error-handler';
-import { DefaultOAuthInterceptor } from './interceptors/default-oauth.interceptor';
-import { ValidationHandler } from './token-validation/validation-handler';
-import { createDefaultLogger, createDefaultStorage } from './factories';
-import { HashHandler, DefaultHashHandler, } from './token-validation/hash-handler';
+import { OAuthService } from './oauth-service.mjs';
+import { UrlHelperService } from './url-helper.service.mjs';
+import { OAuthResourceServerErrorHandler, OAuthNoopResourceServerErrorHandler, } from './interceptors/resource-server-error-handler.mjs';
+import { DefaultOAuthInterceptor } from './interceptors/default-oauth.interceptor.mjs';
+import { ValidationHandler } from './token-validation/validation-handler.mjs';
+import { createDefaultLogger, createDefaultStorage } from './factories.mjs';
+import { HashHandler, DefaultHashHandler, } from './token-validation/hash-handler.mjs';
 export function provideOAuthClient(config = null, validationHandlerClass = NullValidationHandler) {
     return makeEnvironmentProviders([
         OAuthService,

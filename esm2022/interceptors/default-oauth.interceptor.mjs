@@ -2,9 +2,9 @@ import { Injectable, Optional } from '@angular/core';
 import { of, merge } from 'rxjs';
 import { catchError, filter, map, take, mergeMap, timeout, } from 'rxjs/operators';
 import * as i0 from "@angular/core";
-import * as i1 from "../oauth-service";
-import * as i2 from "./resource-server-error-handler";
-import * as i3 from "../oauth-module.config";
+import * as i1 from "../oauth-service.mjs";
+import * as i2 from "./resource-server-error-handler.mjs";
+import * as i3 from "../oauth-module.config.mjs";
 export class DefaultOAuthInterceptor {
     constructor(oAuthService, errorHandler, moduleConfig) {
         this.oAuthService = oAuthService;

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NullValidationHandler } from './token-validation/null-validation-handler';
-import { provideOAuthClient } from './provider';
+import { NullValidationHandler } from './token-validation/null-validation-handler.mjs';
+import { provideOAuthClient } from './provider.mjs';
 import * as i0 from "@angular/core";
 export class OAuthModule {
     static forRoot(config = null, validationHandlerClass = NullValidationHandler) {

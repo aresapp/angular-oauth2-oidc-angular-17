@@ -1,4 +1,4 @@
-import { base64UrlEncode } from '../base64-helper';
+import { base64UrlEncode } from '../base64-helper.mjs';
 /**
  * Interface for Handlers that are hooked in to
  * validate tokens.
