@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "license": "MIT",
   "files": [
-    "dist/lib"
+    "dist"
   ],
   "scripts": {
     "release": "standard-version",
     "ng": "ng",
     "start": "ng serve --project sample -o",
-    "build": "ng build --configuration production --project lib && npm run copy:readme && npm run copy:license && npm run docs",
+    "build": "ng build --configuration production --project dist && npm run copy:readme && npm run copy:license && npm run docs",
     "build:jwks": "ng build angular-oauth2-oidc-jwks --ts-config tsconfig.npm.json && npm run copyfiles:jwks",
     "test": "ng test",
-    "lint": "ng lint lib",
+    "lint": "ng lint dist",
     "e2e": "ng e2e",
     "tsc": "tsc",
     "prettier": "prettier --write projects/**/*.ts",
